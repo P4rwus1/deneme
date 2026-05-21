@@ -2,4 +2,13 @@
   "installCommand": "npm install --prefix starry-embrace-dream-main",
   "buildCommand": "npm run build",
   "outputDirectory": "starry-embrace-dream-main/dist/client"
+  {
+"rewrites": [
+{
+"source": "/(.*)",
+"destination": "/index.html"
+}
+]
+}
+
 }

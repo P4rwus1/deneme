@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "npm run dev --prefix starry-embrace-dream-main",
-    "build": "npm run build --prefix starry-embrace-dream-main",
+    "build": "npm install --prefix starry-embrace-dream-main && npm run build --prefix starry-embrace-dream-main",
     "preview": "npm run preview --prefix starry-embrace-dream-main"
   },
   "dependencies": {

@@ -1,8 +1,16 @@
 import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import tsconfigPaths from "vite-tsconfig-paths";
+import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 
-// @lovable.dev/vite-tanstack-config arkada otomatik çalıştığı için 
-// doğrudan standart Vite konfigürasyonunu dışa aktarıyoruz.
 export default defineConfig({
+  plugins: [
+    tsconfigPaths({
+      projects: ["./tsconfig.json"],
+    }),
+    tanstackStart(),
+    react(),
+  ],
   server: {
     host: "::",
     port: 8080,

@@ -1,1 +1,27 @@
-{"name":"starry-embrace","private":true,"version":"0.0.0","type":"module","scripts":{"dev":"vite","build":"vite build","preview":"vite preview"},"dependencies":{"@tanstack/react-router":"^1.132.27","@tanstack/react-start":"^1.168.9","gsap":"^3.12.5","react":"^19.1.0","react-dom":"^19.1.0"},"devDependencies":{"@types/node":"^25.9.1","@types/react":"^19.1.2","@types/react-dom":"^19.1.2","@vitejs/plugin-react":"^4.3.1","lenis":"^1.3.23","typescript":"^5.8.3","vite":"^7.0.0"}}
+{
+  "name": "starry-embrace",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npm run dev --prefix starry-embrace-dream-main",
+    "build": "npm install --prefix starry-embrace-dream-main && npm run build --prefix starry-embrace-dream-main",
+    "preview": "npm run preview --prefix starry-embrace-dream-main"
+  },
+  "dependencies": {
+    "@tanstack/react-router": "^1.132.27",
+    "@tanstack/react-start": "^1.168.9",
+    "gsap": "^3.12.5",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.3.1",
+    "lenis": "^1.3.23",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.0"
+  }
+}
